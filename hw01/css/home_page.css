@@ -1,0 +1,85 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	background:#f14a52 url(../pic/bg.jpg) no-repeat center top;
+	font-family:微軟正黑體, Helvetica;
+	font-weight:600;
+    -moz-background-size: cover;
+    background-size:cover;
+}
+
+.title{
+    /* border:1px solid black; */
+    margin-top:140px;
+	text-align: center; 
+    font-size:70px;
+    font-weight:3000;
+    color: #f14a52;
+    text-align: center;
+    /* -webkit-text-stroke: 4px #000; */
+    /* text-shadow: 0 0 2px black; */
+    text-shadow: black 2px 2px 2px;
+}
+
+.menu_container{
+	/* border:1px solid black; */
+	text-align: center;
+	margin:25px;
+}
+
+.menu{
+	/* border:1px solid black; */
+	display:inline-flex;
+    margin:30px;
+	display:inline-flex;
+	justify-content:space-around;
+	align-items:center;
+
+       
+    @media (min-width: 768px){  /* >768px，變兩欄*/
+        width: 49%; /* 因為有border，所以不能用50% */
+    }
+    @media (min-width: 992px){  /* >992px，變三欄 */
+        width: 33%;
+    }
+    @media (min-width: 1200px){  /* >992px，變四欄 */
+        width: 24%;
+    }
+}
+
+.home_button {
+    /*border: 1px solid #C7C7C7;*/
+    border-radius: 100px;
+    padding: 28px 45px;
+    text-align: center;
+    background-color: #fed200;
+    box-shadow: 0px 7px 2px -5px #1A1A1A, inset 2px 2px 4px #000;
+    -webkit-box-shadow: 0px 7px 2px -5px #1A1A1A, inset 0px 0px 4px #000;
+    -moz-box-shadow: 0px 7px 2px -5px #1A1A1A, inset 0px 0px 4px #000;
+    text-shadow: #492501 2px 2px 2px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: '微軟正黑體';
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-transition: 0.15s;
+    -moz-transition: 0.15s;
+    -o-transition: 0.15s;
+    cursor: pointer;
+}
+
+.home_button:hover {
+    background: none;
+    background-color: #fed200;
+    box-shadow: 0px 0px 5px 2px #AAAAAA;
+    position: relative; /* 當滑鼠經過超連結時，超連結往上位移1像素 */
+	top: 1px;
+}
+
+.home_button:active {
+    top: 1px;
+    position: relative;
+}
