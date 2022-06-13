@@ -1,0 +1,14 @@
+function morph(commands, unicode, defaultUPM){
+    //Function name must be "morph"  
+
+    for(var i=0;i<commands.length;i++){
+        commands[i].command = "moveto";
+        commands[i].x1 -= 30;
+        commands[i].y1 -= 50;
+    }
+
+    console.log(commands);
+
+    //You Must return an array, first element is path commands, second element is upm(optimal)
+    return [ commands ] ;
+};
